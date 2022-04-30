@@ -67,7 +67,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold; }
 
-h3 {
+h3, p {
   font-size: 1rem;
   font-weight: bold;
   overflow-y: hidden; }
@@ -84,8 +84,6 @@ span {
   border-radius: 30px; }
 
 p {
-  font-size: 1rem;
-  font-weight: bold;
   color: #ffffff;
   text-align: center; }
 

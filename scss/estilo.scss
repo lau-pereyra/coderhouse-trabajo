@@ -10,6 +10,12 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
+  @mixin flex-row-around-wrap(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
   /*  */
   /* ROOT */
     $primary-color: #edf2f4;
@@ -97,16 +103,12 @@
     border-radius: 30px;
   }
   p{
-    font-size: 1rem;
-    font-weight: bold;
+    @extend h3;
     color: #ffffff;
     text-align: center;
   }
   .popular-productos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    @include flex-row-around-wrap;
     img{
       width: 300px;
     }
@@ -190,11 +192,7 @@
   /* SECTION PRODUCTOS */
   
   #productos-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
+    @include flex-row-around-wrap;
     img{
       width: 300px;
     }
