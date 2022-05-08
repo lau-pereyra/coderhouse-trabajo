@@ -118,7 +118,7 @@ p {
   color: #edf2f4;
   margin: 10px;
   overflow-y: hidden; }
-  .comprar .comprar:hover {
+  .comprar:hover {
     opacity: 0.7;
     cursor: pointer; }
 
@@ -285,7 +285,7 @@ textarea {
     display: none; }
   header nav ul {
     position: fixed;
-    top: 20px;
+    top: 40px;
     right: -110%;
     transition: all 0.5s ease-out; }
   header nav i {
@@ -318,12 +318,15 @@ textarea {
   .form-container_div2 input {
     margin: 10px; } }
 
-@media (max-width: 540px) {
+@media (max-width: 610px) {
   nav ul {
     position: fixed;
     top: 20px;
     right: -150%;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    overflow-y: hidden; }
+  nav li {
+    margin: -15px; }
   nav i {
     color: #ffffff;
     display: flex;
@@ -334,8 +337,7 @@ textarea {
     line-height: 80px;
     color: #edf2f4;
     font-weight: bold;
-    font-size: 0.7rem;
-    padding: 10px; }
+    font-size: 0.6rem; }
   h1 {
     font-size: 2.5rem; }
   h2 {
@@ -346,7 +348,7 @@ textarea {
     font-weight: bold;
     font-size: 1.2rem; }
   #click:checked ~ ul {
-    right: 15%; }
+    right: 20%; }
   .form-container_div {
     display: block; }
   .form-container_div input {
@@ -362,4 +364,18 @@ textarea {
     align-items: center;
     margin: 40px; }
     .form-container_div2 input {
-      margin: 10px; } }
+      margin: 10px; }
+  .carousel-div {
+    margin: auto;
+    margin-top: 20px; } }
+
+@media (max-width: 433px) {
+  #click:checked ~ ul {
+    right: 20%; }
+  nav ul {
+    overflow-y: hidden; }
+  nav li {
+    margin: -15px; }
+  .carousel-div {
+    margin: auto;
+    margin-top: 20px; } }
