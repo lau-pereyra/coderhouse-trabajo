@@ -275,7 +275,7 @@ textarea {
   grid-area: footer; }
 
 /*  */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1066px) {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -375,7 +375,9 @@ textarea {
   nav ul {
     overflow-y: hidden; }
   nav li {
-    margin: -15px; }
+    margin: -18px; }
   .carousel-div {
     margin: auto;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  footer {
+    height: fit-content; } }
